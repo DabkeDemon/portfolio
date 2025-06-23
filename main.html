@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qLowfy</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide-icons@latest/dist/lucide.js"></script>
+
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for a more modern look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        .section {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">qLowfy.</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition-colors">About</a>
+                <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition-colors">Projects</a>
+                <a href="#skills" class="text-gray-600 hover:text-indigo-600 transition-colors">Skills</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-gray-600 hover:text-indigo-600">About</a>
+            <a href="#projects" class="block py-2 text-gray-600 hover:text-indigo-600">Projects</a>
+            <a href="#skills" class="block py-2 text-gray-600 hover:text-indigo-600">Skills</a>
+        </div>
+    </header>
+
+    <main class="pt-20">
+
+        <!-- Hero Section -->
+        <section id="hero" class="container mx-auto px-6 py-20 md:py-32">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 text-center md:text-left">
+                    <span class="text-indigo-600 font-semibold">Hey, Im qLowfy</span>
+                    <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mt-2 mb-4 leading-tight">Full Stack Developer</h1>
+                    <p class="text-gray-600 text-lg mb-8">based in Kuwait.</p>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#projects" class="bg-white text-gray-700 px-6 py-3 rounded-lg text-lg hover:bg-gray-100 transition-all border border-gray-200 shadow-lg">View My Work</a>
+                    </div>
+                    <div class="mt-8 flex justify-center md:justify-start space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-indigo-600"><i data-lucide="github" class="w-6 h-6"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-indigo-600"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-indigo-600"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-indigo-200 to-purple-200 overflow-hidden shadow-2xl">
+                        <!-- Replace with your photo URL -->
+                        <img src="https://cdn.discordapp.com/attachments/1367297802341711956/1386763408501772369/c5cb0f66ea1485a908c45ba3e3ac39af.jpg?ex=685ae391&is=68599211&hm=c08757e5f910feab346ff188ef39a429f3979945c88458ed10c1d1651ba5de53&" 
+                             onerror="this.onerror=null;this.src='https://placehold.co/400x400/E2E8F0/4F46E5?text=JD';"
+                             alt="John Doe" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-2 text-gray-900">About Me</h2>
+                <p class="text-center text-gray-500 mb-12">A little bit about my background and passions.</p>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/3 flex justify-center">
+                         <!-- Replace this placeholder with your own profile picture -->
+                         <img src="https://cdn.discordapp.com/attachments/1386794672026026106/1386796943950221342/qLowfy.png?ex=685b02cc&is=6859b14c&hm=381a6882dd52095cf1df5a10359181ebedfdb85e37ff0c891bf1b337aeac0378&" 
+                              onerror="this.onerror=null;this.src='https://placehold.co/600x600/FFFFFF/333333?text=Profile+Pic';"
+                              alt="About Me Image" class="rounded-lg shadow-xl w-full max-w-sm">
+                    </div>
+                    <div class="md:w-2/3 text-lg text-gray-600">
+                        <p class="mb-4">Hello! Im a Full Stack Developer by profession, building the digital backbone of the web and crafting seamless user experiences. But my passion truly ignites in the realms of gaming, especially Minecraft. </p>
+                        <p class="mb-4">With a strong foundation in front-end and back-end technologies, I specialize in building responsive, user-friendly, and high-performance websites and applications. I'm a lifelong learner, constantly exploring new technologies and frameworks to stay at the forefront of the industry.</p>
+                        <p>When I'm not coding, you can find me exploring the latest tech gadgets, contributing to open-source projects, or enjoying a good cup of coffee at a local cafe in Kuwait City.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-2 text-gray-900">Featured Projects</h2>
+                <p class="text-center text-gray-500 mb-12">Here's some of the work I'm most proud of.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://cdn.discordapp.com/attachments/1367297802341711956/1386750642164600994/image.png?ex=685ad7ad&is=6859862d&hm=303bc7906e70827b26398ff8694e029c696a23535d7ca83f02e0559d3622652a&" 
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/93C5FD/1E3A8A?text=E-commerce';"
+                             alt="E-commerce Platform Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Typing Test</h3>
+                            <p class="text-gray-600 mb-4">Typing Test is a free, minimalist, and highly customizable typing test website, designed to help users improve their typing speed and accuracy.</p>
+                            <div class="mb-4">
+                                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">JavaScript                                                                                                                                                                                                                                                                                                                                          </span>
+                                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">HTML</span>
+                            </div>
+                            <div class="flex justify-end items-center">
+                                <a href="#" class="text-gray-400 hover:text-indigo-600"><i data-lucide="github" class="w-6 h-6"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://cdn.discordapp.com/attachments/1386794672026026106/1386794766821359706/Down_Bot_-_Discord_bot.png?ex=685b00c5&is=6859af45&hm=b5d5767d12a0edb1a5218982abfe1d3eb0716a70d807fd64124cdd289e625906&" 
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/A5B4FC/312E81?text=Task+App';"
+                             alt="Task Management App Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Down Bot - Discord bot</h3>
+                            <p class="text-gray-600 mb-4">Down Bot is a highly customizable Discord bot that simplifies server management through a user-friendly web dashboard. It offers a wide range of features, including moderation tools, music playback, auto-moderation, welcoming new members, reaction roles, giveaways, and more.</p>
+                             <div class="mb-4">
+                                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">JavaScript</span>
+                                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Python</span>
+                            </div>
+                            <div class="flex justify-end items-center">
+                                <a href="#" class="text-gray-400 hover:text-indigo-600"><i data-lucide="github" class="w-6 h-6"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://cdn.discordapp.com/attachments/1386794672026026106/1386799203879227546/image.png?ex=685b04e7&is=6859b367&hm=d0b1fa25f9db51ebce60bf735bc76e28107634fc77d51810509efb440a9ef22a&" 
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/6EE7B7/064E3B?text=Portfolio';"
+                             alt="Portfolio Website Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Chat Bot</h3>
+                            <p class="text-gray-600 mb-4">AI CHAT BOT</p>
+                            <div class="mb-4">
+                                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">HTML</span>
+                                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">JavaScript</span>
+                                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">CSS</span>
+                                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Java</span>
+                            </div>
+                           <div class="flex justify-end items-center">
+                                <a href="#" class="text-gray-400 hover:text-indigo-600"><i data-lucide="github" class="w-6 h-6"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-2 text-gray-900">My Skills</h2>
+                <p class="text-center text-gray-500 mb-12">The technologies I'm proficient with.</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 text-center">
+                    <div class="flex flex-col items-center gap-2">
+                        <div class="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center">
+                           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-12 h-12" />
+                        </div>
+                        <p class="font-semibold">HTML</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div class="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-12 h-12" />
+                        </div>
+                        <p class="font-semibold">CSS</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div class="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center">
+                           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-12 h-12" />
+                        </div>
+                        <p class="font-semibold">JavaScript</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div class="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="w-12 h-12" />
+                        </div>
+                        <p class="font-semibold">Node.js</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div class="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center">
+                           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="w-12 h-12" />
+                        </div>
+                        <p class="font-semibold">Git</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div class="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center">
+                           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-12 h-12" />
+                        </div>
+                        <p class="font-semibold">Python</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <div class="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center">
+                           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="w-12 h-12" />
+                        </div>
+                        <p class="font-semibold">Java</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="border-t border-gray-700 pt-6 text-gray-500 text-sm">
+                <p>&copy; 2025 qLowfy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const initPage = () => {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+
+                // Mobile Menu Toggle
+                const mobileMenuButton = document.getElementById('mobile-menu-button');
+                const mobileMenu = document.getElementById('mobile-menu');
+                
+                if (mobileMenuButton && mobileMenu) {
+                    mobileMenuButton.addEventListener('click', () => {
+                        mobileMenu.classList.toggle('hidden');
+                    });
+                
+                    
+                    const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+                    for(let link of mobileMenuLinks) {
+                        link.addEventListener('click', () => {
+                            mobileMenu.classList.add('hidden');
+                        });
+                    }
+                }
+
+                
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+
+                        const targetElement = document.querySelector(this.getAttribute('href'));
+                        if (targetElement) {
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                });
+            } else {
+                /
+                setTimeout(initPage, 50);
+            }
+        };
+
+        
+        window.addEventListener('load', initPage);
+
+    </script>
+</body>
+</html>
